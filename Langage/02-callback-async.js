@@ -9,7 +9,7 @@ console.log('E');
 // A B D C E
 // B E A D C
 
-// Event Loop
+// Event Loop (coté C++)
 // do {
 //   execJs();
 //   drawPage();

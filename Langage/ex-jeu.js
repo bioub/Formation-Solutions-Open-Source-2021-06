@@ -18,6 +18,7 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+// Module CommonJS (Node.js)
 const readline = require('readline');
 
 const rl = readline.createInterface({

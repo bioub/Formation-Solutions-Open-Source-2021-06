@@ -23,6 +23,8 @@ const coords = {
   y: 2,
 };
 
+coords.z = 3;
+
 const MyMath = {
   sum: (a, b) => a + b,
 };

@@ -2,7 +2,7 @@
 import { hello } from './hello.js';
 
 const names = [
-  'Jean',
+  'Jeanne',
   'Paul',
   'Eric',
   'Romain',

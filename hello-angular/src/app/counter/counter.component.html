@@ -1,0 +1,8 @@
+<button (click)="count = count + 1">{{ count }}</button>
+<button (click)="count = count + $event.clientX">{{ count }}</button>
+<!--
+  btn.addEventListener('click', ($event) => {
+    // event.target.className -> event.target.value
+    // expression
+  });
+-->

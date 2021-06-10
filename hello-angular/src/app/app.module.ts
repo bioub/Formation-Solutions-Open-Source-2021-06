@@ -9,6 +9,10 @@ import { ExHelloworldComponent } from './ex-helloworld/ex-helloworld.component';
 import { ExMultistateButtonComponent } from './ex-multistate-button/ex-multistate-button.component';
 import { FormsModule } from '@angular/forms';
 import { SelectComponent } from './select/select.component';
+import { HomeComponent } from './home/home.component';
+import { UsersComponent } from './users/users.component';
+import { UserService } from './user.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,14 +21,18 @@ import { SelectComponent } from './select/select.component';
     CounterComponent,
     ExHelloworldComponent,
     ExMultistateButtonComponent,
-    SelectComponent
+    SelectComponent,
+    HomeComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

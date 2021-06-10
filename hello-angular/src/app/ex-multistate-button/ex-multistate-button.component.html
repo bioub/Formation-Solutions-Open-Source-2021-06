@@ -1,3 +1,12 @@
+<button
+  (click)="nextValue()"
+  [title]="index"
+  [attr.aria-title]="values[index]"
+  [class.first]="index === 0"
+  [style.backgroundColor]="values[index]"
+>
+  {{ values[index] }}
+</button>
 <!--
   Exercice Multistate button
   - créer une propriété values sur le composant

@@ -1,5 +1,6 @@
-<div>Prénom : <input type="text" /></div>
-<p>Bonjour ... !</p>
+<!-- <div>Prénom : <input type="text" [value]="name" (input)="name = $any($event.target).value" /></div> -->
+<div>Prénom : <input type="text" [value]="name" (input)="updateName($event)" /></div>
+<p>Bonjour {{ name }} !</p>
 <!--
   Exercice Helloworld
   - créer une propriété name dans le fichier .ts

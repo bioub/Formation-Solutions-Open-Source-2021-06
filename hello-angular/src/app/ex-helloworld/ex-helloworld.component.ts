@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExHelloworldComponent implements OnInit {
 
+  name = 'Romain';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  updateName(event: Event) {
+    const inputEl = event.target as HTMLInputElement;
+    this.name = inputEl.value;
   }
 
 }

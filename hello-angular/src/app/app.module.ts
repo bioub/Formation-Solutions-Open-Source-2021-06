@@ -7,6 +7,8 @@ import { HelloComponent } from './hello/hello.component';
 import { CounterComponent } from './counter/counter.component';
 import { ExHelloworldComponent } from './ex-helloworld/ex-helloworld.component';
 import { ExMultistateButtonComponent } from './ex-multistate-button/ex-multistate-button.component';
+import { FormsModule } from '@angular/forms';
+import { SelectComponent } from './select/select.component';
 
 @NgModule({
   declarations: [
@@ -14,10 +16,12 @@ import { ExMultistateButtonComponent } from './ex-multistate-button/ex-multistat
     HelloComponent,
     CounterComponent,
     ExHelloworldComponent,
-    ExMultistateButtonComponent
+    ExMultistateButtonComponent,
+    SelectComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

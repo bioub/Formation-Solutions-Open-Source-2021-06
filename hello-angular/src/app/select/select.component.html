@@ -1,0 +1,4 @@
+<div class="select" (click)="open = !open">{{ selected }}</div>
+<div class="menu" *ngIf="open">
+  <div *ngFor="let value of values" (click)="handleClick(value)">{{ value }}</div>
+</div>

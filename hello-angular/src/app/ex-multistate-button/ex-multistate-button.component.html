@@ -3,10 +3,13 @@
   [title]="index"
   [attr.aria-title]="values[index]"
   [class.first]="index === 0"
+  [ngClass]="{second: index === 1, third: index === 2}"
   [style.backgroundColor]="values[index]"
 >
   {{ values[index] }}
 </button>
+
+<p [ngClass]="{hidden: values.length !== 3}">3 éléments dans le tableau</p>
 <!--
   Exercice Multistate button
   - créer une propriété values sur le composant

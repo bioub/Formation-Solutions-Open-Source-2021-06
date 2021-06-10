@@ -10,4 +10,8 @@
 <app-ex-helloworld></app-ex-helloworld>
 <app-ex-multistate-button [values]="['red', 'green', 'blue']"></app-ex-multistate-button>
 
+<app-select [values]="['red', 'green', 'blue']" [(selected)]="couleur"></app-select>
+
+<p>Vous avez sélectionné : {{couleur}}</p>
+
 <router-outlet></router-outlet>

@@ -1,6 +1,13 @@
 <!-- <div>Prénom : <input type="text" [value]="name" (input)="name = $any($event.target).value" /></div> -->
-<div>Prénom : <input type="text" [value]="name" (input)="updateName($event)" /></div>
+<!-- <div>Prénom : <input type="text" [value]="name" (input)="updateName($event)" /></div> -->
+
+<!-- <div>Prénom : <input type="text" [ngModel]="name" (ngModelChange)="name = $event"  /></div> -->
+
+
+<div>Prénom : <input type="text" [(ngModel)]="name"  /></div>
 <p>Bonjour {{ name }} !</p>
+
+
 <!--
   Exercice Helloworld
   - créer une propriété name dans le fichier .ts

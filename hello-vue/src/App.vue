@@ -1,16 +1,18 @@
 <template>
-  <Hello name="Romain" />
+
 </template>
 
 <script>
-import Hello from './components/Hello.vue'
+import Home from "./components/Home.vue";
+import Users from "./components/Users.vue";
 
 export default {
   name: 'App',
   components: {
-    Hello
+    Home,
+    Users,
   }
-}
+};
 </script>
 
 <style>

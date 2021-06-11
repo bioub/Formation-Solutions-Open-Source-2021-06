@@ -4,7 +4,6 @@ class Counter extends Component {
   constructor() {
     super();
     this.state = {
-      name: 'Romain',
       count: 0,
     };
     this.handleClick = this.handleClick.bind(this);

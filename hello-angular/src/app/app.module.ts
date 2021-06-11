@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
 import { UserService } from './user.service';
 import { HttpClientModule } from '@angular/common/http';
+import { UserAddComponent } from './user-add/user-add.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     ExMultistateButtonComponent,
     SelectComponent,
     HomeComponent,
-    UsersComponent
+    UsersComponent,
+    UserAddComponent
   ],
   imports: [
     BrowserModule,

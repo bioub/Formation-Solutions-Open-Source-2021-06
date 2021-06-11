@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { User } from './interfaces';
 
@@ -6,6 +6,8 @@ import { User } from './interfaces';
   providedIn: 'root'
 })
 export class UserService {
+
+  addEvent = new EventEmitter<User>();
 
   constructor(
     private httpClient: HttpClient,

@@ -23,6 +23,10 @@ export class UsersComponent implements OnInit {
     this.userService.getAll().subscribe((users) => {
       this.users = users;
     });
+
+    this.userService.addEvent.subscribe((user) => {
+      this.users.push(user);
+    })
   }
 
 }

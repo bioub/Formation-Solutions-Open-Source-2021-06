@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import Hello from './components/Hello.vue';
-import Counter from './components/Counter.vue';
-import CounterJSX from './components/CounterJSX.vue';
-import Select from './components/Select.vue';
+import Hello from './Hello.vue';
+import Counter from './Counter.vue';
+import CounterJSX from './CounterJSX.vue';
+import Select from './Select.vue';
 
 export default {
   name: 'Home',

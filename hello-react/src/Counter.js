@@ -1,9 +1,10 @@
-import { Component } from "react";
+import { Component } from 'react';
 
 class Counter extends Component {
   constructor() {
     super();
     this.state = {
+      name: 'Romain',
       count: 0,
     };
     this.handleClick = this.handleClick.bind(this);
@@ -17,7 +18,11 @@ class Counter extends Component {
   }
 
   render() {
-    return <button className="Counter" onClick={this.handleClick}>{this.state.count}</button>
+    return (
+      <button className="Counter" onClick={this.handleClick}>
+        {this.state.count}
+      </button>
+    );
   }
 }
 

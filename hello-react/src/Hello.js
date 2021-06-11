@@ -1,4 +1,5 @@
-import React from 'react';
+// import optionnel depuis React 17
+// import React from 'react';
 
 function Hello(props) {
   // const divEl = document.createElement('div');
